@@ -5,93 +5,258 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buru | Inicio</title>
     <link rel="stylesheet" href="styles.css">
-    
-   
 </head>
 <body>
-  <header>
-   <div>
-    <button> <a href="index.html"> 
-      <img src="assets/Logo en negro.png" class="logo" alt="logopng"> </button>
-  
-    <button> <img src="assets/Search.png" class="icono" alt="Icono de busqueda"></button>
-    <button><img src="assets/Profile.png"  class="icono" alt="icono de perfil"></button>
-    <button><img src="assets/Favourite.png"  class="icono" alt="icono favorito"></button>
-    <button><img src="assets/Shop (2).png"  class="icono" alt="Bolsa de compra"> </button>
-     </li></div>
+
+    <header class="header">
+
+        <div class="menu container">
+            
+           <img src="images/Logo en negro.png" class="logo" alt="logo">
+           <input type="checkbox" id="menu"/> 
+           <label for="menu">
+              <img src="images/menu.png"class="menu-icono" alt="menu">  
+           </label>
+           <div>
+           <nav class="navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+             </nav></div>
+             <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/Search.png" id="img-search" alt="profile">
+                    </li>
+
+                    
+                    <li class="submenu">
+                        <img src="images/Profile.png"id="img-profile" alt="profile">
+                    </li>
+                     <li class="submenu">
+                        <img src="images/Favourite.png"id="img-favorito" alt="favorito">
+                     </li>
+
+        
+                    <li class="submenu">
+                        <img src="images/Shop (2).png" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+
+                        </div>
+                    </li>
+                </ul>
+             </div>
+        </div>
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="images/Foto portada.png"alt="">
+             </div>
+         </div>
+
+    </header>
+
     
-      
-      
-    <nav class="navbar">
-    <ul>
-    <li><a href="./pages/shop.html" class="navbar">SHOP</a></li>
-    <li><a href="./pages/marcas.html" class="navbar">MARCAS</a></li>
-    <li><a href="./pages/sale.html" class="navbar">SALE</a></li>
-    <li><a href="./pages/nosotros.html"class="navbar">NOSOTROS</a></li>
-    </ul>
-    </nav>
+    <main class="products" id="lista-1">
 
-  </header>  
-  <main class="Fondo">
-     <img src="./assets/fondo.webp"  alt="fondoprincipal">
-    
-  
-  <div>
-    <h1>Novedades</h1></div>
-    <div class="cards">
-    <div class="card">
-    <img src="./assets/Remera negra VCP.webp" class="cards" alt="Remera negra vcp">
-    <p>Remera negra VCP</p>
-    <P> $33.990</P>
-    </div>
-     <div class="card">
-    <img src="./assets/Remera negra VCP.webp" class="cards" alt="Remera negra vcp">
-    <p>Remera negra VCP</p>
-    <p>$33.990</p>
-    </div>
-    <div class="card">
-    <img src="./assets/Remera negra VCP.webp" class="cards" alt="Remera negra vcp">
-    <p>Remera negra VCP</p>
-    <p>$33.990</p>
-    </div>
-    <div class="card">
-    <img src="./assets/Remera negra VCP.webp" class="cards" alt="Remera negra vcp">
-    <p>Remera negra VCP</p>
-    <p>$33.990</p>
-    </div>
-    <div class="card">
-    <img src="./assets/Remera negra VCP.webp" class="cards" alt="Remera negra vcp">
-    <p>Remera negra VCP</p>
-    <p>$33.990</p></div>
-</div>
-</main>
-  <section class="categorias">
-  <h2> <button> <img src="assets/REMERAS.png" class="categorias" alt="categoria remeras y Sudaderas"></button></h2>
-  <h2><button> <img src="assets/Pantalones categoria.webp" class="categorias" ="Pantalones categoria"></button> </h2>
-  <h2><button><img src="assets/Abrigo categoria.webp"class="categorias" alt="Abrigo categoria"></button></h2>
-  <h2><button> <img src="assets/CAMISAS Y CHOMBAS.png"class="categorias" alt="Camisas y chombas categorias"> </button></h2>
-  <H2><button><img src="assets/Accesorios categorias.webp"class="categorias" alt="Accesorios categorias"></button></H2>
-  </section>
+        <h2>Nuevos ingresos</h2>
 
-  <footer> 
-    <div>
-      <h2>Información y ayuda</h2>
-    <ol>
-      <li>Cómo comprar</li>
-      <li>Métodos de pago</li>
-      <li>Envíos</li>
-      <li>Políticas de cambio</li>
-    </ol>
-          </div>
-      
-          <div>
-            <h2>Nosotros</h2>
-            <ol>
-              <li>Local</li>
-              <li>Contacto</li>
-            </ol>
-          </div>
+        <div class="product-content">
 
-  </footer>
-  </body>
+            <div class="product">
+                <img src="images/BlissNegra3.webp" alt="">
+                <img src="images/Favourite.png"class="icon-fav" alt="">
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>REMERA OVER TAZZ BLISS NEGRA</p>
+                    <p class="precio">$39 990 </p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/CHOMBA_OTTOMAN_CAMEL_2.webp" alt="">
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>CHOMBA OTTTOMAN CAMEL</p>
+                    <p class="precio">$39 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Remera king Of.webp"alt="">
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>REMERA KING OF</p>
+                    <p class="precio">$33 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/REMERA OCN HOMBRE PREMIUM.webp"alt="">
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>REMERA OCN PREMIUM</p>
+                    <p class="precio">$33 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            
+            
+         </div>
+         <section>
+         <div class="categoria-1">
+            <div class="cat-img">
+                <img src="images/Remeras y Sudaderas.png" alt="">
+                 <div class="cat-txt">
+                <a href="#" class="btn-2">Remeras & Sudaderas</a>
+                </div>
+            </div>
+            <div class="categoria-1"></div>
+            <div class="cat-img">
+                <img src="images/Pantalones.png"alt="">
+                <div class="cat-txt">
+                <a href="#" class="btn-2">Pantalones</a>
+                   </div>
+                 
+             </div>
+             </div>
+        </div>
+        <div class="categoria-1">
+            <div class="cat-img">
+                <img src="images/Abrigo.png"alt="">
+                <div class="cat-txt">
+                 <a href="#" class="btn-2">Abrigo</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="categoria-1">
+            <div class="cat-img">
+                <img src="images/Camisas y chombas.png"alt="">
+                <div class="cat-txt">
+                 <a href="#" class="btn-2">Camisas & Chombas</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="categoria-1">
+            <div class="cat-img">
+                <img src="images/Accesorios.png"alt="">
+                <div class="cat-txt">
+                 <a href="#" class="btn-2">Accesorios</a>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </section>
+    </main>
+    <section class="icons container">
+        <div class="icons-1">
+            <div class="icons-img">
+                <img src="images/i1.svg" alt="">
+            </div>
+                <div class="icon-txt">
+                    <h3>Lorem ipsum dolor sit </h3>
+                    <p> 
+                        amet consectetur adipisicing elit
+                    </p>
+                </div>
+        </div>
+        <div class="icons-1">
+            <div class="icon-img">
+                <img src="images/i2.svg" alt="">
+            </div>
+                <div class="icon-txt">
+                    <h3>Lorem ipsum dolor sit </h3>
+                    <p> 
+                        amet consectetur adipisicing elit
+                    </p>
+                </div>
+        </div>
+        <div class="icons-1">
+            <div class="icon-img">
+                <img src="images/i3.svg" alt="">
+            </div>
+                <div class="icon-txt">
+                    <h3>Lorem ipsum dolor sit </h3>
+                    <p> 
+                        amet consectetur adipisicing elit
+                    </p>
+                </div>
+        </div>
+
+        
+
+    </section>
+   
+
+   <footer class="footer">
+     <div class="footer-content container">
+        <div class="link">
+            <h3>lorem</h3>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                
+            </ul>
+
+        </div>
+        <div class="link">
+            <h3>lorem</h3>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                
+            </ul>
+
+        </div>
+        <div class="link">
+            <h3>lorem</h3>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                
+            </ul>
+
+        </div>
+        <div class="link">
+            <h3>lorem</h3>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                
+            </ul>
+
+        </div>
+
+     </div>
+       
+
+   </footer>
+
+</body>
 </html>
