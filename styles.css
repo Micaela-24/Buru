@@ -12,7 +12,8 @@ font-family: 'Poppins', sans-serif;
     list-style: none;
 }
 body    {
-    font-family: "poppins",sans-serif;
+    font-family: "poppins:wght@400",sans-serif;
+    padding-top: 90px;
 }
 img     {
     max-width: 100%;
@@ -21,12 +22,21 @@ img     {
 .container  {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
+
 }
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
+    height: 100px;
+    justify-content: space-between;
+    padding: 0 20px;;
     align-items: center;
-    min-height: 80vh;
     background-color: #ffffff;
+    z-index: 10;
 
 }
 .menu   {
@@ -39,9 +49,13 @@ img     {
     justify-content: space-between;
 }
 .logo {
-    width: 100px;
+   width: 100px;
    border-bottom:none;
-    
+   justify-content:space-evenly;
+   align-items: center;
+   padding: 0px;
+   margin: 20px 0 20px 10px;   
+   cursor: pointer; 
     }
 
 .menu .navbar ul li     {
@@ -66,6 +80,7 @@ img     {
     width: 25px;
     justify-content: space-between;
     align-items:center;
+    cursor: pointer;
 
 
 }
@@ -117,28 +132,24 @@ th, td  {
     cursor: pointer;
 }
 
-.header-content     {
-    display:block;
+.header-content  {
+    width: 100%;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+
+
     
 }
 
-.header-img     
-   .header-content     {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    
-}
-
-.header-img     {
-    display: block;
+.header-img  {
     width: 100%;
     height: auto;
-    margin: 0;
-    padding: 0;
-
+    display: block;
+    
+    
 }
 
 
@@ -206,40 +217,45 @@ th, td  {
 .product-content    {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    gap: 10px;
 }
 
 .product    {
     display: inline-block;
     position: relative;
     text-align: center;
-    padding: 30px;
+    margin: 20px 30px; 
+    width: 300px;
+
     
 }
 
-.product img{
-    display: relative;
-    width: 250px;
-    height: 370px;
-    margin-bottom:auto;
+.product-img-container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+
 }
 
-.product .icon-fav  {
-    width: 35px;
-    height: 35px;
+.product-img-container img-first.chirl {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
-.icon-fav {
-    display: absolute;
-     top: 10px; 
-     right:10%;
-     width: 35px;  /* Tamaño del icono */
-     height: 24px;
-     cursor: pointer;
-     transform: translate(-50%,-50%);
 
+.icon-fav  {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
+    z-index: 2;
+    cursor: pointer;
 
 }
+
 .product h3{
     font-size: 20px ;
     color: #111111;
@@ -292,14 +308,20 @@ th, td  {
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    padding: auto;
+    margin: 0 100vh 0 50px;
+
+    
+    
 }
 
 .link h3{
     font-size: 18px;
     color: #ffffff;
-    font-family: "Oswald" , sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -317,7 +339,9 @@ th, td  {
     }
 
     .menu label {
-        display: initial;
+        display:flex;
+        grid-template-columns: repeat(2, 1fr)
+
     }
 
     .menu .navbar   {
@@ -331,18 +355,23 @@ th, td  {
 
     .menu .navbar ul list-style {
         width: 100%;
-    };
+    }
 
     .menu .navbar ul li a   {
         color: #ffffff;
     }
 
     #menu:checked ~ .navbar{
-        display: initial;
+        display: flex;
 
     }
 
-    .logo{ display: none;
+    .logo{ 
+        display: flex;
+        position:absolute;
+        align-items: center;
+        justify-content: center;
+
     }
 
     .submenu:hover #carrito {
@@ -350,39 +379,37 @@ th, td  {
     }
 
     .header {
-        min-height: 0vh;
+        height: 40px;
+        background-color: #ffffff;
+    
     }
 
     .header-content {
         padding: 50px 0;
         flex-direction: column;
+        
+
     }
 
     .header-img{
-        display:flex;
+        display:block;
         width: 100%;
-        padding:30px 0;
+        height: auto;
+        padding:0;     
         margin:0;
         flex-direction: column;
+        object-fit: cover;
+        object-position: center;
        
         
     }
 
-    .header-txt {
-        flex-basis: 100%;
-        text-align: center;
-    }
-
-    .header-txt h1{
-        font-size: 70px;
-    }
-
-    .ofert  {
+    .categoria-1  {
         padding: 30px 30px 0 30px;
         flex-direction: column;
     }
 
-    .ofert-1        {
+    .categoria-1{
         margin-bottom: 30px;
     }
 
@@ -416,12 +443,28 @@ th, td  {
     
 
     .footer{
-        padding: 30px;
+        display:block;
+        justify-content: space-between;
+        width: 100%;
+        padding: 150px;
+        align-items: center;
+        text-align: center;
+       
+        
     }
 
     .footer-content {
+        display: inline;
         flex-direction: column;
+        text-align:unset;
+        align-items: center;
+        padding: 0%;
+        margin: auto;
+    }
+
+    .link h3 {
         text-align: center;
+        margin: 35px;
     }
 
 
