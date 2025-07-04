@@ -419,33 +419,47 @@ th, td  {
 
 @media (max-width:991px)    {
     .menu   {
-        padding: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        background-color: #ffffff;
         
+    }
+    .logo{
+        display: block;
+        width: 120px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        order: 1;
+    }
+
+    .submenu{
+        display: none;
+        
+
+
+
+
     }
 
     .menu label {
-        display:flex;
-        flex-direction: column;
+        align-self: flex-end;
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
 
     }
-    .menu-icono {
-        display: block;
-        border-bottom: 10px;
-    }
+    
 
     .menu .navbar   {
         position: static;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #181818;
+        text-align: right;
         display: none;
+        
     }
 
-    .menu .navbar ul list-style {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
+    .menu .navbar ul li {
+        padding: 10px 0;
+
     }
 
     .menu .navbar ul li a   {
@@ -457,13 +471,6 @@ th, td  {
 
     }
 
-    .logo{ 
-        display: flex;
-        position:absolute;
-        align-items: center;
-        justify-content: center;
-
-    }
 
     .submenu:hover #carrito {
         min-width: 100%;
