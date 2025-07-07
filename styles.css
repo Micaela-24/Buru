@@ -66,13 +66,22 @@ img     {
 
 .menu .navbar ul li a   {
     font-size: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 5px 5px;
     color:#2C2B2B;
     display:block;
     text-transform: uppercase;
 
 }
 
+.menu .navbar ul li a:hover {
+    background-color: #111111d0;
+    border-radius: 10%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
 #menu   {
     display: none;
 }
@@ -375,7 +384,7 @@ th, td  {
 }
 
 .footer {
-    padding: 50px 0;
+    padding: 40px 0;
     background-color: #111111;
 }
 
@@ -385,22 +394,19 @@ th, td  {
     align-items:baseline;
     padding: auto;
     margin: 0 100vh 0 50px;
-
-    
-    
 }
 
-.copy {
+ .copy {
     color: #ffffff;
     font-size: 14px;
     font-family: "Poppins", sans-serif;
-    margin: 0 10px 0 30px;
-    display: inline-block;
-    text-align: center;
-    margin-top: 40px;
+    
+    display: flex;
+    text-align:center;
     justify-content: center;
     
 }
+
 
 .link h3{
     font-size: 18px;
@@ -417,53 +423,67 @@ th, td  {
     margin-bottom: 10px;
 }
 
-@media (max-width:991px)    {
+@media (max-width:768px)    {
     .menu   {
-        flex-direction: column;
-        align-items: stretch;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        position: absolute;
         background-color: #ffffff;
+        
+        
         
     }
     .logo{
-        display: block;
+        display: flex;
         width: 120px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-        order: 1;
-    }
-
-    .submenu{
-        display: none;
+        height: auto;
+        margin: 0 0 20px 10px; 
+        position:relative;
         
+    }
+    
+   
+    .menu label {
+        display: flex;
+        cursor: pointer;
+        margin-top: 110px;
+        margin-inline-start: -210px;
+        padding: 20px;
 
-
-
-
+        
+      
+        
     }
 
-    .menu label {
-        align-self: flex-end;
-        display: block;
+    .menu-icono{
+        width: 30px;
+        height: auto;
         cursor: pointer;
-        margin-right: 20px;
 
     }
     
 
     .menu .navbar   {
         position: static;
-        text-align: right;
         display: none;
-        
-    }
+        background-color: #111111;
+        padding: 10px 0;
+        text-align: right;
+        }
 
     .menu .navbar ul li {
-        padding: 10px 0;
+        display: inline-block;
+        align-items: center;
+        }
 
+    .menu .navbar ul li {
+       padding: 10px 10px;
     }
 
     .menu .navbar ul li a   {
         color: #ffffff;
+        text-decoration: none;;
     }
 
     #menu:checked ~ .navbar{
@@ -512,21 +532,46 @@ th, td  {
     }
 
     .products   {
-        padding: 0 30px 30px 30px;
+        padding: 50px 0;
+        text-align: center;
+      
+
+
     }
 
     .product h2{
         margin-bottom: 30px;
     }
 
-    .product-content    {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
-    }
+   .product-img-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+   .product-img-container .chirl{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
 
     .product img    {
-        width: 200px;
-        height: 280px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .product .icon-fav  {
+         width: 60px;
+         height: 60px;
+         position: absolute;
+         bottom: 10px;
+         right: 10px;
+         z-index: 2;
+         cursor: pointer;
+        
     }
 
     .icons{
@@ -552,7 +597,7 @@ th, td  {
     }
 
     .footer-content {
-        display: inline;
+        display: flex;
         flex-direction: column;
         text-align:unset;
         align-items: center;
