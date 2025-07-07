@@ -4,29 +4,269 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buru | Shop</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header>
-    <div>
-   <button> <link rel="stylesheet" href="index.html"> <img 
-    src="assets/logoburu.png" class="logo" alt="logopng"> </button>
-    <button> 
-      <img src="assets/Icono de search.png"class="icono" alt="Icono de busqueda"></button>
-    <button><img src="assets/Icono de perfil.png" class="icono" alt="icono de perfil"></button>
-    <button><img src="assets/marketeq_favourite.png" class="icono" alt="icono favorito"></button>
-    </div>
-      
-      
-    <nav class="navbar">
-    <ul>
-         <a href="./pages/shop.html">SHOP</a>
-      <a href="./pages/marcas.html">MARCAS</a>
-       <a href="./pages/sale.html">SALE</a>
-        <a href="./pages/nosotros.html">NOSOTROS</a>
-           </ul>
-           </nav>
+ 
+   <header class="header">
 
-  </header>  
-    
-</body>
-</html>
+        <div class="menu container">
+            
+           <img src="/assets/Logo en negro.png" class="logo" alt="logo">
+           <input type="checkbox" id="menu"/> 
+           <label for="menu">
+              <img src="/assets/menu.png"class="menu-icono" alt="menu">  
+           </label>
+           <div>
+           <nav class="navbar">
+            <ul>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">marcas</a></li>
+                <li><a href="#">sale</a></li>
+                <li><a href="#">nosotros</a></li>
+            </ul>
+             </nav></div>
+             <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="/assets/Search.png" id="img-buscador" alt="Buscador">
+                    </li>
+
+                    
+                    <li class="submenu">
+                        <img src="/assets/profile.png"id="img-perfil" alt="perfil">
+                    </li>
+                     <li class="submenu">
+                        <img src="/assets/Favourite.png"id="img-favorito" alt="favorito">
+                     </li>
+
+        
+                    <li class="submenu">
+                        <img src="/assets/Shop (2).png" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+
+                        </div>
+                    </li>
+                </ul>
+             </div>
+        </div>
+     </header>
+
+     <main class="products" id="lista-1">
+
+        <h2>Nuevos ingresos</h2>
+
+        <div class="product-content">
+
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/blissnegra3.webp" alt="">
+                <img src="/assets/favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>REMERA OVER TAZZ BLISS NEGRA</p>
+                    <p class="precio">$39 990 </p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/CHOMBA_OTTOMAN_CAMEL_2.webp" alt="">
+                <img src="/assets/favourite.png"class="icon-fav" alt="">
+                </div>
+
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>CHOMBA OTTTOMAN CAMEL</p>
+                    <p class="precio">$39 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+        
+            <div class="product">
+                 <div class="product-img-container">
+                <img src="/assets/Remera king Of.webp"alt="">
+                <img src="/assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>REMERA KING OF</p>
+                    <p class="precio">$33 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/REMERA OCN HOMBRE PREMIUM.webp"alt="">
+                <img src="/assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>REMERA OCN PREMIUM</p>
+                    <p class="precio">$33 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            
+          </main>
+            
+     <main class="products" id="lista-1">
+           <div class="product-content">
+
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/blissnegra3.webp" alt="">
+                <img src="/assets/favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>REMERA OVER TAZZ BLISS NEGRA</p>
+                    <p class="precio">$39 990 </p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/CHOMBA_OTTOMAN_CAMEL_2.webp" alt="">
+                <img src="/assets/favourite.png"class="icon-fav" alt="">
+                </div>
+
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>CHOMBA OTTTOMAN CAMEL</p>
+                    <p class="precio">$39 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+        
+            <div class="product">
+                 <div class="product-img-container">
+                <img src="/assets/Remera king Of.webp"alt="">
+                <img src="/assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>REMERA KING OF</p>
+                    <p class="precio">$33 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/REMERA OCN HOMBRE PREMIUM.webp"alt="">
+                <img src="/assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>REMERA OCN PREMIUM</p>
+                    <p class="precio">$33 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            
+          </main>
+          
+     <main class="products" id="lista-1">
+
+        <div class="product-content">
+
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/blissnegra3.webp" alt="">
+                <img src="/assets/favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>REMERA OVER TAZZ BLISS NEGRA</p>
+                    <p class="precio">$39 990 </p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/CHOMBA_OTTOMAN_CAMEL_2.webp" alt="">
+                <img src="/assets/favourite.png"class="icon-fav" alt="">
+                </div>
+
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>CHOMBA OTTTOMAN CAMEL</p>
+                    <p class="precio">$39 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+        
+            <div class="product">
+                 <div class="product-img-container">
+                <img src="/assets/Remera king Of.webp"alt="">
+                <img src="/assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>REMERA KING OF</p>
+                    <p class="precio">$33 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/REMERA OCN HOMBRE PREMIUM.webp"alt="">
+                <img src="/assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>REMERA OCN PREMIUM</p>
+                    <p class="precio">$33 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            
+          </main> 
+     <footer class="footer">
+     <div class="footer-content container">
+        <div class="link">
+            <h3>Información & ayuda</h3>
+            <ul>
+                <li><a href="#">Cómo comprar</a></li>
+                <li><a href="#">Métodos de pago</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Política de cambios</a></li>
+                
+            </ul>
+
+        </div>
+        <div class="link">
+            <h3>Nosotros</h3>
+            <ul>
+                <li><a href="#">Local</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <p class="copy">© 2023 Buru. Todos los derechos reservados.</p>
+        <p class="copy">Desarrollado por MC</p>
+    </div>
+       
+
+   </footer>
