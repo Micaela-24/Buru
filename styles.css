@@ -49,15 +49,23 @@ img     {
     justify-content: space-between;
 }
 .logo {
-   width: 120px;
+   width: 150px;
    border-bottom:none;
    justify-content:space-between;
    align-items: center;
    padding: 0px;
    margin: 10px 0 20px -30px;   
    cursor: pointer; 
+   transition:box-shadow 0.3s ease;
+
     }
 
+    .logo:hover {
+        box-shadow: 0 5px rgba(0, 0, 0, 0,1);
+        transform: scale(1.05);
+        border-radius: 30%;
+        
+    }
 .menu .navbar ul li     {
     position: relative;
     float:left;    
