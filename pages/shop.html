@@ -18,7 +18,6 @@
            <label for="menu">
               <img src="/assets/menu.png"class="menu-icono" alt="menu">  
            </label>
-           <div>
            <nav class="navbar">
             <ul>
                 <li><a href="shop.html">shop</a></li>
@@ -26,7 +25,7 @@
                 <li><a href="sale.html">sale</a></li>
                 <li><a href="nosotros.html">nosotros</a></li>
             </ul>
-             </nav></div>
+             </nav>
              <div>
                 <ul>
                     <li class="submenu">
@@ -66,9 +65,34 @@
      </header>
    <main class="products" id="lista-1">
 
-        <h2>Nuevos ingresos</h2>
+    <div class="barra-filtros">
+        <div class="izquierda"> 
+        <p>1.000 productos</p>
+        <button class="btn-filtro">
+            <img src="/assets/icono-filtro.png" alt="Filtro">
+            Mostrar filtros
+        </button>
+        </div>
+
+        <div class="derecha">
+            <label for="orden">Ordenar por</label>
+            <div class="custom-select">
+            <select  id="orden">
+                <option value="caracteristicas">Características</option>
+                <option value="precio-mayor">Precio: Mayor a menor</option>
+                <option value="precio-menor">Precio: Menor a mayor</option>
+                <option value="fecha-antiguo">Fecha: Antiguo a reciente</option>
+                <option value="fecha-reciente">Fecha: Reciente a antiguo</option>
+                <option value="az">Alfabéticamente: A-Z</option>
+                <option value="za">Alfabéticamente: Z-A</option>
+            </select>
+            </div>
+
+        </div>
+    </div>
 
         <div class="product-content">
+           
 
             <div class="product">
                 <div class="product-img-container">
@@ -99,25 +123,25 @@
         
             <div class="product">
                  <div class="product-img-container">
-                <img src="/assets/Remera-king-Of.webp"alt="">
+                <img src="/assets/Buzo-king-of-art-HEssentialKoa.webp"alt="">
                 <img src="/assets/Favourite.png"class="icon-fav" alt="">
                 </div>
                 <div class="product-txt">
                     <h3>OCN</h3>
-                    <p>REMERA KING OF</p>
-                    <p class="precio">$33 990</p>
+                    <p>BUZO KING OF ESSENTIAL KOA</p>
+                    <p class="precio">$69 990</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
                 </div>
             </div>
             <div class="product">
                 <div class="product-img-container">
-                <img src="/assets/Remera-negra-vcp.webp"alt="">
+                <img src="/assets/Buzo-King-Of-Art-Hombre-Harlem-Negro.webp"alt="">
                 <img src="/assets/Favourite.png"class="icon-fav" alt="">
                 </div>
                 <div class="product-txt">
                     <h3>OCN</h3>
-                    <p>REMERA OCN PREMIUM</p>
-                    <p class="precio">$33 990</p>
+                    <p>BUZO KING OF HARLEM NEGRO</p>
+                    <p class="precio">$66 493</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
                 </div>
             </div>
@@ -133,58 +157,65 @@
 
             <div class="product">
                 <div class="product-img-container">
-                <img src="/assets/Bliss-negra-3.webp" alt="">
+                <img src="/assets/Remera-rgl-Valley-Blanca.webp" alt="">
                 <img src="/assets/favourite.png"class="icon-fav" alt="">
                 </div>
                 <div class="product-txt">
                     <h3>VCP</h3>
-                    <p>REMERA OVER TAZZ BLISS NEGRA</p>
-                    <p class="precio">$39 990 </p>
+                    <p>REMERA RGL VALLEY BLANCA</p>
+                    <p class="precio">$49 990 </p>
                     <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
                 </div>
             </div>
             
             <div class="product">
                 <div class="product-img-container">
-                <img src="/assets/chomba_ottoman_camel_2.webp" alt="">
+                <img src="/assets/Remera-Over-Hana-Sun-Crudo.webp" alt="">
                 <img src="/assets/favourite.png"class="icon-fav" alt="">
                 </div>
 
                 <div class="product-txt">
                     <h3>VCP</h3>
-                    <p>CHOMBA OTTTOMAN CAMEL</p>
-                    <p class="precio">$39 990</p>
+                    <p>REMERA OVER HANA SUN CRUDO</p>
+                    <p class="precio">$49 990</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
                 </div>
             </div>
         
             <div class="product">
                  <div class="product-img-container">
-                <img src="/assets/Remera-king-Of.webp"alt="">
+                <img src="/assets/Campera-Ocn-Hombre-Covert-Imp-Militar.webp"alt="">
                 <img src="/assets/Favourite.png"class="icon-fav" alt="">
                 </div>
                 <div class="product-txt">
                     <h3>OCN</h3>
-                    <p>REMERA KING OF</p>
-                    <p class="precio">$33 990</p>
+                    <p>CAMPERA OCN CONVERT IMP MILITAR</p>
+                    <p class="precio">$115 499</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
                 </div>
             </div>
             <div class="product">
                 <div class="product-img-container">
-                <img src="/assets/Remera-negra-vcp.webp"alt="">
+                <img src="/assets/Jogging-Ocn-Hombre-Truck-601.webp"alt="">
                 <img src="/assets/Favourite.png"class="icon-fav" alt="">
                 </div>
                 <div class="product-txt">
                     <h3>OCN</h3>
-                    <p>REMERA OCN PREMIUM</p>
-                    <p class="precio">$33 990</p>
+                    <p>JOGGING OCN HOMBRE TRUCK 601</p>
+                    <p class="precio">$63 990</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
                 </div>
             </div>
             
             
          </div>
+
+         <div class="paginacion">
+            <button>1</button>
+             <button>2</button>
+             <button>3</button>
+             <button><img src="/assets/icono-flecha.png" alt=""></button>
+</div>
       
     </main>
      
@@ -212,9 +243,10 @@
     </div>
 
     <div>
-        <p class="copy">© 2023 Buru. Todos los derechos reservados.</p>
-        <p class="copy">Desarrollado por MC</p>
+        <p class="copy">© 2025 Buru. Todos los derechos reservados. Desarrollado por MC</p>
     </div>
        
 
    </footer>
+   </body>
+   </html>
