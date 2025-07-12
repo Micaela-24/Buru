@@ -4,29 +4,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buru | Sale</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header>
-    <div>
-   <button> <link rel="stylesheet" href="index.html"> <img 
-    src="assets/logoburu.png" class="logo" alt="logopng"> </button>
-    <button> 
-      <img src="assets/Icono de search.png"class="icono" alt="Icono de busqueda"></button>
-    <button><img src="assets/Icono de perfil.png" class="icono" alt="icono de perfil"></button>
-    <button><img src="assets/marketeq_favourite.png" class="icono" alt="icono favorito"></button>
-    </div>
-      
-      
-    <nav class="navbar">
-    <ul>
-         <a href="./pages/shop.html">SHOP</a>
-      <a href="./pages/marcas.html">MARCAS</a>
-       <a href="./pages/sale.html">SALE</a>
-        <a href="./pages/nosotros.html">NOSOTROS</a>
-           </ul>
-           </nav>
+   <header class="header">
 
-  </header>  
+        <div class="menu container">
+          <a href="/index.html">
+           <img src="/assets/Logo-en-negro.png" class="logo" alt="logo">
+          </a>
+           <input type="checkbox" id="menu"/> 
+           <label for="menu">
+              <img src="/assets/menu.png"class="menu-icono" alt="menu">  
+           </label>
+           <nav class="navbar">
+            <ul>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="marcas.html">marcas</a></li>
+                <li><a href="sale.html">sale</a></li>
+                <li><a href="nosotros.html">nosotros</a></li>
+            </ul>
+             </nav>
+             <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="/assets/Search.png" id="img-buscador" alt="Buscador">
+                    </li>
+
+                    
+                    <li class="submenu">
+                        <img src="/assets/profile.png"id="img-perfil" alt="perfil">
+                    </li>
+                     <li class="submenu">
+                        <img src="/assets/favourite.png"id="img-favorito" alt="favorito">
+                     </li>
+
+        
+                    <li class="submenu">
+                        <img src="/assets/Shop.png" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+
+                        </div>
+                    </li>
+                </ul>
+             </div>
+        </div>
+     </header>
+
+
+   <main class="products" id="lista-1">
+    <div class="barra-filtros">
+        <div class="izquierda"> 
+        <p>8 productos</p>
+        <button class="btn-filtro">
+            <img src="/assets/icono-filtro.png" alt="Filtro">
+            Mostrar filtros
+        </button>
+        </div>
+
+        <div class="derecha">
+            <label for="orden">Ordenar por</label>
+            <div class="custom-select">
+            <select  id="orden">
+                <option value="caracteristicas">Características</option>
+                <option value="precio-mayor">Precio: Mayor a menor</option>
+                <option value="precio-menor">Precio: Menor a mayor</option>
+                <option value="fecha-antiguo">Fecha: Antiguo a reciente</option>
+                <option value="fecha-reciente">Fecha: Reciente a antiguo</option>
+                <option value="az">Alfabéticamente: A-Z</option>
+                <option value="za">Alfabéticamente: Z-A</option>
+            </select>
+            </div>
+
+        </div>
+    </div>
+
+        <div class="product-content">
+
+            <div class="product">
+                
+                <div class="product-img-container">
+                <img src="/assets/Bliss-negra-3.webp" alt="">
+                <img src="/assets/favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>REMERA OVER TAZZ BLISS NEGRA</p>
+                    <p class="precio">$39 990 </p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/chomba_ottoman_camel_2.webp" alt="">
+                <img src="/assets/favourite.png"class="icon-fav" alt="">
+                </div>
+
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>CHOMBA OTTTOMAN CAMEL</p>
+                    <p class="precio">$39 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+        
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/Remera-rgl-Valley-Blanca.webp" alt="">
+                <img src="/assets/favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>REMERA RGL VALLEY BLANCA</p>
+                    <p class="precio">$49 990 </p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/Buzo-King-Of-Art-Hombre-Harlem-Negro.webp"alt="">
+                <img src="/assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>BUZO KING OF HARLEM NEGRO</p>
+                    <p class="precio">$66 493</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            
+            
+         </div>
+      
+    </main>
+     
+    <main class="products" id="lista-1">
+
+        <div class="product-content">
+
+            <div class="product">
+               
+                <div class="product-img-container">
+                <img src="/assets/Buzo-King-Of-Art-Hombre-Harlem-Negro.webp"alt="">
+                <img src="/assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>BUZO KING OF HARLEM NEGRO</p>
+                    <p class="precio">$66 493</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/Buzo-king-of-art-HEssentialKoa.webp"alt="">
+                <img src="/assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>BUZO KING OF ESSENTIAL KOA</p>
+                    <p class="precio">$69 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+        
+            <div class="product">
+                 <div class="product-img-container">
+                <img src="/assets/Campera-Ocn-Hombre-Covert-Imp-Militar.webp"alt="">
+                <img src="/assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>CAMPERA OCN CONVERT IMP MILITAR</p>
+                    <p class="precio">$115 499</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-img-container">
+                <img src="/assets/Jogging-Ocn-Hombre-Truck-601.webp"alt="">
+                <img src="/assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>JOGGING OCN HOMBRE TRUCK 601</p>
+                    <p class="precio">$63 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            
+            
+         </div>
+
+       
+      
+    </main>
+     
+     
+     <footer class="footer">
+     <div class="footer-content container">
+        <div class="link">
+            <h3>Información & ayuda</h3>
+            <ul>
+                <li><a href="#">Cómo comprar</a></li>
+                <li><a href="#">Métodos de pago</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Política de cambios</a></li>
+                
+            </ul>
+
+        </div>
+        <div class="link">
+            <h3>Nosotros</h3>
+            <ul>
+                <li><a href="#">Local</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <p class="copy">© 2025 Buru. Todos los derechos reservados. Desarrollado por MC</p>
+    </div>
+       
+
+   </footer>
+    
     
 </body>
 </html>
