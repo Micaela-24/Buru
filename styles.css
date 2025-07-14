@@ -229,7 +229,7 @@ th, td  {
   height: auto;
   border-radius: 50px;
   border-bottom: #111111;
-  margin: 40px 50px 50px 90px;
+  margin: 40px 0px 50px 120px;
   align-content: center;
   align-items: center;
 }
@@ -557,57 +557,59 @@ th, td  {
 
 
 
-@media (max-width:768px)    {
-    .menu   {
+@media (max-width:767px)    {
+    .menu  {
         display: flex;
-        justify-content: space-between;
         flex-direction: row;
-        position: relative;
-        background-color: #ffffff;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#ffffff;
+        
         }
-    .logo{
-        display: flex;
+
+    .logo {
         width: 120px;
-        height: auto;
-        margin: 0 0 20px 10px; 
-        position:relative;
-        
-    }
-    
-   
-    .menu label {
-        display: flex;
-        cursor: pointer;
-        margin-top: 110px;
-        margin-left: -300px;
-        
+        height:0 auto;
+        padding: 10px;
      }
 
-    .menu-icono{
+     .menu label {
+        display: flex;
+    
+        
+      }
+
+    .menu-icono {
+        position: relative;
+        top: 60px;
+        right: 200px;
         width: 30px;
         height: auto;
         cursor: pointer;
-     }
-    
+        z-index: 2;
+
+    }
+
 
     .menu .navbar   {
-        position: absolute;
         display: none;
-        top: 100%;
+        position: absolute;
+        top:150px;
         left: 0;
-        min-width: 150px;
-        z-index: 1000;
+        width: 100%;
         background-color: #111111ef;
-        padding: 15px;
-        margin: 25px 0;
+        padding:10px 15px;
         }
 
-    .menu .navbar ul li {
-        display: flex;
+    .menu .navbar ul{
+        flex-direction: column;
+        padding: 0;
+
+
      }
 
     .menu .navbar ul li {
-       padding: 10px 0px;
+        padding: 10px 0;
     }
 
     .menu .navbar ul li a   {
@@ -620,19 +622,19 @@ th, td  {
 
     }
 
-
+    
     .submenu:hover #carrito {
         min-width: 100%;
     }
 
     .header {
-        height: 25%;
+        height: auto;
         background-color: #ffffff;
     
     }
 
     .header-content {
-        padding: 60px 0;
+        padding: 100px 0;
         flex-direction: column;
         
 
@@ -651,6 +653,23 @@ th, td  {
         
     }
 
+    .logo-marca {
+        width: 60px;
+        height: auto;
+        border-radius: 50px;
+        border-bottom: #111111;
+        margin: 40px 0px 20px 35px;
+        align-content: center;
+        align-items: center;
+    }
+
+     .seccion-marcas{
+        isplay: inline-flex;
+        justify-content:space-between;
+        align-items: center;
+        align-content: center;
+}
+
     .categoria-1  {
         padding: 30px 30px 0 30px;
         flex-direction: column;
@@ -661,8 +680,14 @@ th, td  {
     }
 
     .products   {
+        flex-direction:column;
         padding: 50px 0;
         text-align: center;
+    }
+
+    .product-content {
+        display: grid;
+        grid-template-columns: repeat(4fr , 1fr);
     }
 
     .product h2{
