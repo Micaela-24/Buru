@@ -9,10 +9,9 @@
 <body>
 
     <header class="header">
-
         <div class="menu container">
     
-           <img src="assets/Logo-en-negro.png" class="logo" alt="logo">
+        <img src="assets/Logo-en-negro.png" class="logo" alt="logo">
           </a>
            <input type="checkbox" id="menu"/> 
            <label for="menu" class="menu-label">
@@ -31,13 +30,12 @@
                     <li class="submenu">
                         <img src="assets/Search.png" id="img-buscador" alt="Buscador">
                     </li>
-
                     
                     <li class="submenu">
-                        <img src="assets/profile.png"id="img-perfil" alt="perfil">
+                        <img src="assets/Profile.png" img-perfil" alt="perfil">
                     </li>
                      <li class="submenu">
-                        <img src="assets/favourite.png"id="img-favorito" alt="favorito">
+                        <img src="assets/Favourite.png"id="img-favorito" alt="favorito">
                      </li>
 
         
@@ -73,13 +71,16 @@
    
 
     
-    <main class="products" id="lista-1">
+    <section class="carousel-container" id="lista-1">
 
         <h2>Nuevos ingresos</h2>
 
         <div class="product-content">
+            <div class="carousel">
+            <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
 
-            <div class="product">
+            <div class="carousel-track">
+             <div class="product">
                 <div class="product-img-container">
                 <img src="assets/Bliss-negra-3.webp" alt="">
                 <img src="assets/Favourite.png"class="icon-fav" alt="">
@@ -90,7 +91,7 @@
                     <p class="precio">$39 990 </p>
                     <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
                 </div>
-            </div>
+             </div>
             
             <div class="product">
                 <div class="product-img-container">
@@ -129,10 +130,66 @@
                     <p class="precio">$33 990</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
                 </div>
+             </div>
+             <div class="product">
+                <div class="product-img-container">
+                <img src="assets/Bliss-negra-3.webp" alt="">
+                <img src="assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>REMERA OVER TAZZ BLISS NEGRA</p>
+                    <p class="precio">$39 990 </p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+             </div>
+            
+            <div class="product">
+                <div class="product-img-container">
+                <img src="assets/Chomba-ottoman-camel-1.webp" alt="">
+                <img src="assets/Favourite.png" class="icon-fav" alt="">
+                </div>
+
+                <div class="product-txt">
+                    <h3>VCP</h3>
+                    <p>CHOMBA OTTTOMAN CAMEL</p>
+                    <p class="precio">$39 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
             </div>
+        
+            <div class="product">
+                 <div class="product-img-container">
+                <img src="assets/Remera-king-Of.webp"alt="">
+                <img src="assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>REMERA KING OF</p>
+                    <p class="precio">$33 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-img-container">
+                <img src="assets/Remera-negra-vcp.webp"alt="">
+                <img src="assets/Favourite.png"class="icon-fav" alt="">
+                </div>
+                <div class="product-txt">
+                    <h3>OCN</h3>
+                    <p>REMERA OCN PREMIUM</p>
+                    <p class="precio">$33 990</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+             </div>
+             </div>
+            </div>
+            <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+            </div>
+        </section>
             
             
-         </div>
+         
          <section>
          <div class="categoria-1">
             <div class="cat-img">
@@ -141,18 +198,17 @@
                 <a href="#" class="btn-2">Remeras & Sudaderas</a>
                 </div>
             </div>
-            <div class="categoria-1"></div>
-            <div class="cat-img">
+            <div class="categoria-1">
+             <div class="cat-img">
                 <img src="assets/Pantalones.png"alt="">
                 <div class="cat-txt">
                 <a href="#" class="btn-2">Pantalones</a>
                    </div>
-                 
              </div>
-             </div>
-     </div>
-        <div class="categoria-1">
-            <div class="cat-img">
+            </div>
+    
+            <div class="categoria-1">
+              <div class="cat-img">
                 <img src="assets/Abrigo.png"alt="">
                 <div class="cat-txt">
                  <a href="#" class="btn-2">Abrigo</a>
@@ -181,7 +237,6 @@
         
         
     </section>
-    </main>
     <section class="icons container">
         <div class="icons-1">
             <div class="icon-img">
@@ -271,6 +326,16 @@
    </footer>
 
 </body>
+<script>
+  function scrollCarousel(direction) {
+    const track = document.querySelector('.carousel-track');
+    const scrollAmount = 300; // Ajustalo según el ancho de tu producto
+    track.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
 
 
 </html>
