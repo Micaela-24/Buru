@@ -243,6 +243,17 @@
        
 
    </footer>
+   <script>
+  function scrollCarousel(direction) {
+    const track = document.querySelector('.carousel-track');
+    const scrollAmount = 300; // Ajustalo según el ancho de tu producto
+    track.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
     
     
 </body>

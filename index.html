@@ -330,11 +330,13 @@
 <script>
   function scrollCarousel(direction) {
     const track = document.querySelector('.carousel-track');
-    const scrollAmount = 300; // Ajustalo según el ancho de tu producto
-    track.scrollBy({
-      left: direction * scrollAmount,
-      behavior: 'smooth'
-    });
+    const scrollAmount = 320; // Tamaño aproximado de una tarjeta + gap
+
+    if (direction === 1) {
+      track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    } else {
+      track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    }
   }
 </script>
 
