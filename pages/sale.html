@@ -8,40 +8,37 @@
 </head>
 <body>
    <header class="header">
-
-        <div class="menu container">
-          <a href="../index.html">
-           <img src="../assets/Logo-en-negro.png" class="logo" alt="logo">
-          </a>
+        <div class="menu container">    
+        <img src="../assets/Logo-en-negro.png" class="logo" alt="logo">
+        
            <input type="checkbox" id="menu"/> 
-           <label for="menu">
+           <label for="menu" class="menu-label">
               <img src="../assets/menu.png"class="menu-icono" alt="menu">  
            </label>
            <nav class="navbar">
             <ul>
-                <li><a href="shop.html">shop</a></li>
-                <li><a href="marcas.html">marcas</a></li>
-                <li><a href="sale.html">sale</a></li>
-                <li><a href="nosotros.html">nosotros</a></li>
+                <li><a href="../pages/shop.html">shop</a></li>
+                <li><a href="../pages/marcas.html">marcas</a></li>
+                <li><a href="../pages/sale.html">sale</a></li>
+                <li><a href="../pages/nosotros.html">nosotros</a></li>
             </ul>
              </nav>
              <div>
-                <ul>
+                <ul class="menu-icons">
                     <li class="submenu">
-                        <img src="../assets/Search.png" id="img-buscador" alt="Buscador">
+                        <img src="../assets/Search.png"  id="img-buscador" alt="Buscador">
                     </li>
-
                     
                     <li class="submenu">
-                        <img src="../assets/Profile.png"id="img-perfil" alt="perfil">
+                        <img src="../assets/Profile.png" id="img-perfil" alt="perfil">
                     </li>
                      <li class="submenu">
-                        <img src="../assets/Favourite.png"id="img-favorito" alt="favorito">
+                        <img src="../assets/Favourite.png" id="img-favorito" alt="favorito">
                      </li>
 
         
                     <li class="submenu">
-                        <img src="../assets/Shop.png" id="img-carrito" alt="carrito">
+                        <img src="../assets/Shop.png"  id="img-carrito" alt="carrito">
                         <div id="carrito">
                             <table id="lista-carrito">
                                 <thead>
@@ -59,6 +56,7 @@
                         </div>
                     </li>
                 </ul>
+             </div>
              </div>
         </div>
      </header>
@@ -239,7 +237,7 @@
         <p class="copy">© 2025 Buru. Todos los derechos reservados. Desarrollado por MC</p>
     </div>
  </footer>
- 
+
    <script>
   function scrollCarousel(direction) {
     const track = document.querySelector('.carousel-track');

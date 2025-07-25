@@ -697,6 +697,7 @@ section h2 {
     .submenu{
         position: relative;
         justify-content: center;
+        bottom: 20px;
     }
     
     .product-content{
@@ -755,26 +756,24 @@ section h2 {
 
 
 @media screen and (max-width: 768px) {
-    .body {
-        flex-direction: column;
-    }
+
     .menu   {
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
-        position: absolute;
+        flex-direction: column;
+        position: relative;
         background-color: #ffffff;
-        margin-bottom: -50px;
+    
         }
 
     
 
     .logo{
         width: 100px;
-        position: relative;
-        margin-bottom: 100px;
-        align-items: center;
-        translate: transf;
+        display: block;
+        margin: 0 auto;
+        max-width: 150px;
+        
     
         
 
@@ -782,25 +781,29 @@ section h2 {
     }
    
     .menu label {
-        display: flex;
+        display: block;
         cursor: pointer;
-        margin-top:100px;
-        margin-left: -100px;
-    
-        
-        
+        justify-content: flex-start;
+        align-items: center;   
+        margin-top: 20px;
      }
 
     .menu-icono{
         width: 30px;
         height: auto;
         cursor: pointer;
+        margin-right: 300px;
+        
+        
 
      }
 
      .submenu {
         height: 30px;
-        top: 50px;
+        left: 70px;
+        justify-content: flex-end;
+        bottom: 40px;
+    
      }
     
 
@@ -809,11 +812,12 @@ section h2 {
         display: none;
         top: 100%;
         left: 0;
+        padding: 0 35px;
         min-width: 150px;
+        min-height: 100px;
         z-index: 1000;
         background-color: #111111ef;
-        padding: 20px;
-        margin: 25px 0;
+        justify-content: center;
         }
 
     .menu .navbar ul li {
@@ -821,12 +825,15 @@ section h2 {
      }
 
     .menu .navbar ul li {
-       padding: 10px 0px;
+       padding: 10px;
     }
 
     .menu .navbar ul li a   {
         color: #ffffff;
         text-decoration: none;
+         text-align: center;
+         justify-content: center;
+         
     }
 
     #menu:checked ~ .navbar{
@@ -840,14 +847,15 @@ section h2 {
     }
 
     .header {
-        padding: 40px;
+        display:block;
         background-color: #ffffff;
+        position: fixed;
     
     }
 
     .header-content {
         padding: 60px 0;
-        flex-direction: column;
+       
         
 
     }
