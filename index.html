@@ -10,9 +10,9 @@
 
     <header class="header">
         <div class="menu container">
-    
+            
         <img src="assets/Logo-en-negro.png" class="logo" alt="logo">
-          </a>
+        
            <input type="checkbox" id="menu"/> 
            <label for="menu" class="menu-label">
               <img src="assets/menu.png"class="menu-icono" alt="menu">  
@@ -297,20 +297,18 @@
 
    
 
-   <footer class="footer">
+    <footer class="footer">
      <div class="footer-content container">
-        <div class="link">
+        <div class="footer-column">
             <h3>Información & ayuda</h3>
             <ul>
                 <li><a href="#">Cómo comprar</a></li>
                 <li><a href="#">Métodos de pago</a></li>
                 <li><a href="#">Envíos</a></li>
                 <li><a href="#">Política de cambios</a></li>
-                
             </ul>
-
-        </div>
-        <div class="link">
+            </div>
+        <div class="footer-column">
             <h3>Nosotros</h3>
             <ul>
                 <li><a href="#">Local</a></li>
@@ -319,26 +317,13 @@
         </div>
     </div>
 
-    <div>
-        <p class="copy">© 2023 Buru. Todos los derechos reservados. Desarrollado por MC</p>
+    <div class="footer-copy">
+        <p class="copy">© 2025 Buru. Todos los derechos reservados. Desarrollado por MC</p>
     </div>
-       
-
-   </footer>
+ </footer>
 
 </body>
-<script>
-  function scrollCarousel(direction) {
-    const track = document.querySelector('.carousel-track');
-    const scrollAmount = 320; // Tamaño aproximado de una tarjeta + gap
-
-    if (direction === 1) {
-      track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    } else {
-      track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-    }
-  }
-</script>
+ 
 
 
 </html>
